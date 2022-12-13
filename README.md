@@ -1,6 +1,6 @@
 # 目前只支援 **Twitch聊天室** ！ 
 
-https://gyazo.com/d5abb40cbf2823d93e98fc389671e71b
+使用範例：https://gyazo.com/d5abb40cbf2823d93e98fc389671e71b
 
 # 使用說明
 
@@ -48,8 +48,14 @@ https://gyazo.com/d5abb40cbf2823d93e98fc389671e71b
 
 1. 本模板含有一些素材，已附上來源網址。
 2. 使用時如果可以介紹一下我並附網址，我會很感謝你(非強制)
+3. 如果用來做影片，我想了一個tag，打上它，讓大家知道你使用了這個素材！
+
+> #我是亂源主播
 
 
+## Contact Me
+
+如果有任何問題，可以到推特(https://twitter.com/Amane_Tainan)或DC(周汰南#4183)找我。
 
 
 ###### Reference
