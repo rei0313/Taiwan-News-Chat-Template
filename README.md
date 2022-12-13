@@ -6,11 +6,11 @@
 
 請參照以下的文字說明，**一步一步來**！
 
-1. 至以下兩個位址把html檔中的`ComfyJS.Init("amane_tainan");` 中的"amane_tainan"改成 **你的圖奇ID**
+1. 至以下位址把html檔中的`ComfyJS.Init("amane_tainan");` 中的"amane_tainan"改成 **你的圖奇ID**
 
     (如果你沒有IDE，可以按右鍵->開啟檔案->記事本編輯)
     >   subtitle/subtitle.html \
-    >   title/ReadFile.html
+
 
 
 2. 至`src`裡取用圖片素材，先組裝到OBS中
