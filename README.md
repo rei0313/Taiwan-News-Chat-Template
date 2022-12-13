@@ -56,6 +56,7 @@
 ## Contact Me
 
 如果有任何問題，可以到推特(https://twitter.com/Amane_Tainan)或DC(周汰南#4183)找我。
+程式新手，請不吝指教。
 
 
 ###### Reference
