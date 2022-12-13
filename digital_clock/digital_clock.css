@@ -1,0 +1,12 @@
+
+
+.clock {
+    /* background-color: black; */
+    /* 之後記得削掉 */
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 7px;
+}

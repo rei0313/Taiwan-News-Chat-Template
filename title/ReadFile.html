@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="title.css">
+
+    <title>Read Text File</title>
+</head>
+
+<body>
+
+    <input type="file" onchange="loadFile(this.files[0])">
+    <br>
+    <pre id="output"></pre>
+    <div id="wrap" class="wrap">
+
+    </div>
+
+
+    <script>
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        let titles = [];
+        let wrap = document.getElementById("wrap");
+        let btn = document.getElementById("btn");
+
+
+        async function loadFile(file) {
+            let text = await file.text();
+            titles = text.split("\r\n");
+            for (let i = 0; i < titles.length; i++) {
+                if(i== titles.length-1){
+                    i = -1;
+                    continue;
+                }
+                wrap.innerHTML = "";
+                let toAdd = document.createElement("div");
+                toAdd.classList.add("title" , "new-box");
+                toAdd.innerHTML = `<span>${titles[i]}</span>`;
+                wrap.appendChild(toAdd);
+                await delay(3000);
+                toAdd.classList.add("clear");
+            }
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

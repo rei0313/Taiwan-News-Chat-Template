@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Genseki';
+    font-style: normal;
+    font-weight: 400;
+    src: local('GenSekiGothic TW TTF Regular'), local('GenSekiGothicTW-Regular'), url('https://cdn.jsdelivr.net/gh/ButTaiwan/genseki-font@master/TW/GenSekiGothicTW-Regular.ttf')  format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional');
+
+body{
+    background-color: rgb(0, 177, 64);
+}
+
+.wrap{
+    padding-top: 20vh;
+}
+
+.wrap div{
+    transform:scaleY(1.9);
+}
+
+.title{
+    font-family: 'GenSekiGothic';
+    font-size: 50px;
+    margin: 20px;
+    right: -100%;
+    transform:scaleY(2);
+}
+
+.title span{
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
+    text-shadow: white 0px 0px 6px;
+}
+
+
+
+@keyframes append-animate {
+	from {
+		transform:  translateY(30vh) ;
+		opacity: 1;
+        
+	}
+	to {
+
+		opacity: 1;	
+        
+	}
+}
+
+@keyframes clear-animate {
+	from {
+
+		opacity: 1;	
+        
+	}
+	to {
+		transform: translateY(-30vh) ;
+		opacity: 1;
+        
+	}
+}
+
+/* animate new box */
+.new-box {
+	animation: append-animate .5s ;
+}
+
+.clear{
+    animation: clear-animate .5s ;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
+    <title>subtile</title>
+</head>
+
+<body>
+    <div id="chat">
+
+    </div>
+</body>
+<script>
+    var chat = document.querySelector("#chat");
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+    var showMsg = true;
+
+    ComfyJS.onChat = async function (user, message, flags, self, extra) {
+
+
+        if (showMsg) {
+            showMsg = false;
+
+            chat.innerHTML = "";
+            var wrap = document.createElement("div");
+            wrap.classList.add("wrap");
+
+            var name_wrap = document.createElement("div");
+            var msg_wrap = document.createElement("div");
+
+            msg_wrap.classList.add("msg_wrap");
+            name_wrap.classList.add("name_wrap");
+
+
+            var name = document.createElement("span");
+            var msg = document.createElement("span");
+
+            msg.classList.add("msg");
+            name.classList.add("name");
+
+            user.slice(0, 5);
+
+
+            name.innerText = user;
+            msg.innerText = message;
+
+            name_wrap.append(name);
+            msg_wrap.append(msg);
+
+            wrap.append(name_wrap);
+            wrap.append(msg_wrap);
+
+            chat.append(wrap);
+
+            delay(3000);
+            showMsg = true;
+        }
+    };
+
+
+
+
+
+    ComfyJS.Init("amane_tainan");
+
+</script>
+
+</html>

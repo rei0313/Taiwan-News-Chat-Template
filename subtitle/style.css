@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Genseki';
+    font-style: normal;
+    font-weight: 900;
+    src: local('GenSekiGothic TW TTF Regular'), local('GenSekiGothicTW-Regular'), url('https://cdn.jsdelivr.net/gh/ButTaiwan/genseki-font@master/TW/GenSekiGothicTW-Regular.ttf')  format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional');
+
+body{
+    background-color: rgb(0, 177, 64);
+}
+#chat{
+    padding-top: 20vh;
+}
+
+
+
+span{
+    font-family: 'GenSeki';
+    font-weight: 900;
+    font-size: 60px;
+    
+}
+
+
+.wrap{
+    display: flex;
+}
+
+
+
+.msg{
+    color: white;
+}
+
+.name{
+    color: rgb(235, 0, 0);
+}
+
+.name_wrap{
+    width: 18%;
+    
+}
+
+.msg_wrap{
+    width: 70%;
+    
+}
